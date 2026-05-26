@@ -9,10 +9,13 @@ public class Card {
 
     //add constructor
 
-    public Card(String suit, String value, boolean isFaceUp) {
+    public Card(String suit, String value) {
         this.suit = suit;
         this.value = value;
         this.isFaceUp = false;
+    }
+
+    public Card(String suit, String value) {
     }
 
 
@@ -47,6 +50,9 @@ public class Card {
     }
 
     //add flip
+    public void flip() {
+        isFaceUp = !isFaceUp;
+    }
 
     public boolean isFaceUp() {
         return isFaceUp;
